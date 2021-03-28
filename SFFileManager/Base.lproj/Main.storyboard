@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hs0-DV-Bab">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SFFileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veS-iL-DHw">
+                                <rect key="frame" x="0.0" y="244" width="414" height="418"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="veS-iL-DHw" secondAttribute="bottom" constant="200" id="1nB-RL-cIc"/>
+                            <constraint firstItem="veS-iL-DHw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="2b4-rV-3pU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="veS-iL-DHw" secondAttribute="trailing" id="sNT-KP-usV"/>
+                            <constraint firstItem="veS-iL-DHw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xYU-XX-ClS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="veS-iL-DHw" id="6rR-aD-8w4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62.318840579710148" y="40.848214285714285"/>
+        </scene>
+        <!--New View Controller-->
+        <scene sceneID="UcN-g1-te6">
+            <objects>
+                <viewController id="hs0-DV-Bab" customClass="NewViewController" customModule="SFFileManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEV-2G-Vlk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-Tg-m69">
+                                <rect key="frame" x="20" y="691" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iXG-kt-o5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Create a File">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="createFileAction:" destination="hs0-DV-Bab" eventType="touchUpInside" id="Aep-Nx-mqP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnc-eD-cVR">
+                                <rect key="frame" x="50" y="351" width="314" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGf-FZ-D18">
+                                <rect key="frame" x="20" y="638" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="aGS-uJ-k7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Check Tmp"/>
+                                <connections>
+                                    <action selector="checkTmp:" destination="hs0-DV-Bab" eventType="touchUpInside" id="xuy-pN-Ccr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvb-JL-KYD">
+                                <rect key="frame" x="20" y="744" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Yfo-4X-MxD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Create a Dir">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="createADir:" destination="hs0-DV-Bab" eventType="touchUpInside" id="cBn-8M-BEV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgZ-f4-G7Y">
+                                <rect key="frame" x="294" y="638" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CMf-9N-MjO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Folder Exist?"/>
+                                <connections>
+                                    <action selector="folderExistCheck:" destination="hs0-DV-Bab" eventType="touchUpInside" id="dT4-nu-oH8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-FA-Z4T">
+                                <rect key="frame" x="294" y="691" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Rxs-uc-q4f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Read file"/>
+                                <connections>
+                                    <action selector="readFileButtonAction:" destination="hs0-DV-Bab" eventType="touchUpInside" id="Tnk-0Y-KoS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voP-yL-13W">
+                                <rect key="frame" x="294" y="744" width="100" height="33"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B1U-xd-6vM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Write to file"/>
+                                <connections>
+                                    <action selector="writeToFileAction:" destination="hs0-DV-Bab" eventType="touchUpInside" id="TqN-Ic-2G2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TOS-be-gf7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TOS-be-gf7" firstAttribute="trailing" secondItem="voP-yL-13W" secondAttribute="trailing" constant="20" id="2CT-qq-chy"/>
+                            <constraint firstItem="dvb-JL-KYD" firstAttribute="top" secondItem="Mbr-Tg-m69" secondAttribute="bottom" constant="20" id="bjJ-6X-cam"/>
+                            <constraint firstItem="Mbr-Tg-m69" firstAttribute="top" secondItem="aGf-FZ-D18" secondAttribute="bottom" constant="20" id="cvm-Io-mIB"/>
+                            <constraint firstItem="Mbr-Tg-m69" firstAttribute="leading" secondItem="TOS-be-gf7" secondAttribute="leading" constant="20" id="dHa-Nc-qBj"/>
+                            <constraint firstItem="aGf-FZ-D18" firstAttribute="leading" secondItem="TOS-be-gf7" secondAttribute="leading" constant="20" id="dZj-Si-AFp"/>
+                            <constraint firstItem="TOS-be-gf7" firstAttribute="trailing" secondItem="Jnc-eD-cVR" secondAttribute="trailing" constant="50" id="ej0-4I-qGy"/>
+                            <constraint firstItem="TOS-be-gf7" firstAttribute="trailing" secondItem="IgZ-f4-G7Y" secondAttribute="trailing" constant="20" id="fdj-sP-rMS"/>
+                            <constraint firstItem="TOS-be-gf7" firstAttribute="bottom" secondItem="dvb-JL-KYD" secondAttribute="bottom" constant="85" id="g3b-RK-9v0"/>
+                            <constraint firstItem="Mbr-Tg-m69" firstAttribute="firstBaseline" secondItem="uUw-FA-Z4T" secondAttribute="firstBaseline" id="gKe-KS-NdS"/>
+                            <constraint firstItem="aGf-FZ-D18" firstAttribute="firstBaseline" secondItem="IgZ-f4-G7Y" secondAttribute="firstBaseline" id="gT9-7y-cH2"/>
+                            <constraint firstItem="Jnc-eD-cVR" firstAttribute="leading" secondItem="TOS-be-gf7" secondAttribute="leading" constant="50" id="kM1-8c-qsw"/>
+                            <constraint firstItem="dvb-JL-KYD" firstAttribute="leading" secondItem="TOS-be-gf7" secondAttribute="leading" constant="20" id="lzJ-yk-JWe"/>
+                            <constraint firstItem="TOS-be-gf7" firstAttribute="trailing" secondItem="uUw-FA-Z4T" secondAttribute="trailing" constant="20" id="srr-UJ-W4K"/>
+                            <constraint firstItem="dvb-JL-KYD" firstAttribute="firstBaseline" secondItem="voP-yL-13W" secondAttribute="firstBaseline" id="swt-Uj-toU"/>
+                            <constraint firstItem="Jnc-eD-cVR" firstAttribute="top" secondItem="TOS-be-gf7" secondAttribute="top" constant="307" id="tch-UI-bMm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLable" destination="Jnc-eD-cVR" id="OQS-Cl-T14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wak-nh-wQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="14"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
